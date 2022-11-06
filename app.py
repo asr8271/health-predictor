@@ -56,4 +56,7 @@ def predict_placement():
 
 
 if __name__ == '__main__':
-    app.run()
+    from os import environ
+    app.run(host='0.0.0.0', debug=False, port=environ.get("PORT", 5000))
+
+
