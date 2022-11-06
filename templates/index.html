@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Health Predictor</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:powderblue;">
+    <h1>Health Predictor using ML Model</h1>
+    {% if result %}
+    <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+
+        <label>AGE</label><br>
+        <input type="text" name="a"><br><br>
+
+        <label>SEX</label><br>
+        <input type="text" name="b"><br><br>
+
+        <label>TIME OF REACHING</label><br>
+        <input type="text" name="c"><br><br>
+
+        <label>HYPERTENSION</label><br>
+        <input type="text" name="d"><br><br>
+
+        <label>DIABETES</label><br>
+        <input type="text" name="e"><br><br>
+
+        <label>SMOKING</label><br>
+        <input type="text" name="f"><br><br>
+
+        <label>EXSMOKER</label><br>
+        <input type="text" name="g"><br><br>
+
+        <label>DRUG ADDICTION</label><br>
+        <input type="text" name="h"><br><br>
+
+        <label>CKD</label><br>
+        <input type="text" name="i"><br><br>
+
+        <label>CAD</label><br>
+        <input type="text" name="j"><br><br>
+
+        <label>RHD</label><br>
+        <input type="text" name="k"><br><br>
+
+        <label>PROSTHETIC VALVE</label><br>
+        <input type="text" name="l"><br><br>
+
+        <label>DYSLIPIDEMIA</label><br>
+        <input type="text" name="m"><br><br>
+
+        <label>SICK SINUS SYNDROME</label><br>
+        <input type="text" name="n"><br><br>
+
+        <label>PACEMAKER</label><br>
+        <input type="text" name="o"><br><br>
+
+        <label>PAST STROKE</label><br>
+        <input type="text" name="p"><br><br>
+
+        <label>PAST TIA</label><br>
+        <input type="text" name="q"><br><br>
+
+        <label>Medicine/SAPT/DAPT</label><br>
+        <input type="text" name="r"><br><br>
+
+        <label>LEFT/RIGHT HEMISPHERIC</label><br>
+        <input type="text" name="s"><br><br>
+
+        <label>NIHSS AT ADMISSION</label><br>
+        <input type="text" name="t"><br><br>
+
+        <label>MRS AT ADMISSION</label><br>
+        <input type="text" name="u"><br><br>
+
+        <label>STROKE ETIOLOGY</label><br>
+        <input type="text" name="v"><br><br>
+
+        <label>BASELINE CT ASPECTS</label><br>
+        <input type="text" name="w"><br><br>
+
+        <label>HYPERDENSE MCA SIGN</label><br>
+        <input type="text" name="x"><br><br>
+
+        <label>Occlusion</label><br>
+        <input type="text" name="y"><br><br>
+
+        <label>A1+A2</label><br>
+        <input type="text" name="z"><br><br>
+
+        <label>CLOT BURDEN SCORE</label><br>
+        <input type="text" name="aa"><br><br>
+
+        <label>THROMBUS LENGTH</label><br>
+        <input type="text" name="bb"><br><br>
+
+        <label>COLLATERAL CT ANGIO</label><br>
+        <input type="text" name="cc"><br><br>
+
+        <label>BRIDGING THROMBOLYSIS</label><br>
+        <input type="text" name="dd"><br><br>
+
+        <label>SUM</label><br>
+        <input type="text" name="ee"><br><br>
+
+        <label>TICI Score</label><br>
+        <input type="text" name="ff"><br><br>
+
+        <label>SYMPTOMATIC ICH</label><br>
+        <input type="text" name="gg"><br><br>
+
+        <label>24 H CT ASPECTS</label><br>
+        <input type="text" name="hh"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+</body>
+
+</html>
